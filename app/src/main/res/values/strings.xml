@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SahilLha </string>
+    <string name="email_edt">Email</string>
+    <string name="password_edt">Password</string>
+    <string name="login_btn">Login</string>
+    <string name="register_txt">Create New Account</string>
+    <string name="fullname_edt">Full Name</string>
+    <string name="idNum">Id Number</string>
+    <string name="register_btn">Register</string>
+    <string name="join_accident">Join Accident</string>
+    <string name="add_accident">Add Accident</string>
+    <string name="user_name_edt">Username</string>
+    <string name="upload_title_txt">Upload your avatar</string>∂
+    <string name="upload_post_txt">Upload your post </string>
+    <string name="create_post_btn">Create a post</string>
+    <string name="ella_txt">Ella</string>
+    <string name="follow_txt">Follow</string>
+    <string name="ihaaveaccount">I have an Account</string>
+    <string name="idonthaaveaccount">Dont have Account ?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="user_id">User Id</string>
+</resources>

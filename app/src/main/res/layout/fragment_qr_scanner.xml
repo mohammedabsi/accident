@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".QrScannerFragment">
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scanner_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:autoFocusButtonColor="@color/forth_color"
+        app:autoFocusButtonVisible="true"
+        app:flashButtonColor="@color/forth_color"
+        app:flashButtonVisible="true"
+        app:frameColor="@android:color/white"
+        app:frameCornersSize="50dp"
+        app:frameCornersRadius="0dp"
+        app:frameAspectRatioWidth="1"
+        app:frameAspectRatioHeight="1"
+        app:frameSize="0.75"
+        app:frameThickness="2dp"
+        app:maskColor="#77000000"/>
+
+     <TextView
+         android:id="@+id/resulttv"
+         android:text="Result"
+    android:layout_gravity="bottom|center"
+         android:textSize="18sp"
+         android:textColor="@color/forth_color"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+
+
+</FrameLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:paddingRight="20dp">
+
+
+
+    <ImageView
+        android:id="@+id/userAvatarIv"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/email_edt"
+        app:hintTextColor="@color/primary_color"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+
+        android:background="@android:color/transparent"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailEdt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <!-- Login Button -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:hint="Enter Password"
+        app:hintTextColor="@color/primary_color"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordEdt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/forgotpasstv"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="5dp"
+        android:gravity="end"
+        android:text="Forgot Password ?"
+        android:textColor="@color/teal_700"
+        android:textSize="13sp"
+
+
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/tvPasswordError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center|start"
+        android:text="Please enter password"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/input"
+        android:gravity="center"
+        android:onClick="goHome"
+        android:text="Login"
+        android:textColor="@color/secondry_color"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="@string/idonthaaveaccount"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/regBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/input"
+        android:onClick="returnRegister"
+        android:padding="15dp"
+        android:text="@string/register_btn"
+        android:textColor="@color/secondry_color"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressBarLogin"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:visibility="invisible" />
+
+
+</LinearLayout>
