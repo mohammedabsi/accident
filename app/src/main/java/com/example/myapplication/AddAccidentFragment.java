@@ -81,7 +81,7 @@ public class AddAccidentFragment extends Fragment {
     TextView scannerBtn ,generate_time;
     EditText idScanner, time, acident_address, carplate;
     ImageView userAvatarIv ;
-  //  private SharedViewModel viewModel;
+    private SharedViewModel viewModel;
     private FirebaseFirestore firestore = FirebaseFirestore.getInstance();
     private FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
     String currentemail = firebaseAuth.getCurrentUser().getEmail();

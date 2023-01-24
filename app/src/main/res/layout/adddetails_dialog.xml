@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:background="@drawable/input"
-        android:hint="Accident Address"
+        android:hint="@string/accident_address"
         android:backgroundTint="@color/secondry_color"
         android:inputType="text"
         android:padding="15dp"
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:background="@drawable/input"
-        android:hint="Car Plate"
+        android:hint="@string/car_plate"
         android:inputType="text"
         android:backgroundTint="@color/secondry_color"
         android:padding="15dp"
@@ -64,7 +64,7 @@
             android:editable="false"
             android:enabled="false"
             android:gravity="center"
-            android:hint="Accident Time"
+            android:hint="@string/accident_time"
             android:padding="15dp"
             android:textStyle="bold" />
 
@@ -76,7 +76,7 @@
 
             android:background="@drawable/input"
             android:gravity="center"
-            android:text="time"
+            android:text="@string/time"
             android:textColor="@color/white" />
 
     </LinearLayout>
@@ -92,7 +92,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@drawable/input"
-            android:text="Upload"
+            android:text="@string/upload"
             android:textColor="@color/secondry_color"
             android:textSize="13sp"
             android:textStyle="bold"
@@ -118,7 +118,7 @@
             android:layout_margin="10dp"
             android:background="@drawable/input"
             android:backgroundTint="@android:color/darker_gray"
-            android:text="Cancel"
+            android:text="@string/cancel"
             android:textColor="@color/white"
             android:textSize="13sp"
             android:textStyle="bold"

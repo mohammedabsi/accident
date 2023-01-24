@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SahilLha </string>
+    <string name="app_name" translatable="false">intellligent Accident Evaluation</string>
     <string name="email_edt">Email</string>
     <string name="password_edt">Password</string>
     <string name="login_btn">Login</string>
@@ -22,4 +22,26 @@
     <string name="navigation_drawer_open">open</string>
     <string name="navigation_drawer_close">close</string>
     <string name="user_id">User Id</string>
+    <string name="accident_proof">Accident Proof</string>
+    <string name="choose_picture">Choose picture</string>
+    <string name="upload">Upload</string>
+    <string name="cancel">Cancel</string>
+    <string name="result">Result</string>
+    <string name="joined_at">Joined at :</string>
+    <string name="second_userid_part_is">Second userId part is :</string>
+    <string name="type_here">Type here...</string>
+    <string name="accident_address">Accident Address</string>
+    <string name="car_plate">Car Plate</string>
+    <string name="accident_time">Accident Time</string>
+    <string name="time">time</string>
+    <string name="your_code_n_note_this_code_for_the_second_user_to_scan_it">Your Code \n Note : this code for the second user to scan it</string>
+    <string name="accident_id_member">Accident Id Member</string>
+    <string name="add">Add</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="please_enter_password">Please enter password</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="helpertxt">choose Strong passowrd \n Contains Capital and special cases</string>
 </resources>

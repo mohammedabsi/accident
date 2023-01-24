@@ -36,7 +36,7 @@
             android:layout_margin="5dp"
             android:focusable="false"
 
-            android:hint="@string/user_id"
+            android:hint="@string/user_name_edt"
             app:boxStrokeColor="@color/teal_700"
             app:hintTextColor="@color/teal_700">
 
@@ -106,7 +106,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layout_margin="10dp"
-                android:text="Joined at : "
+                android:text="@string/joined_at"
                 android:textSize="14sp"
                 android:textStyle="italic" />
 

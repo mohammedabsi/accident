@@ -18,7 +18,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your Code \n Note : this code for the second user to scan it"
+        android:text="@string/your_code_n_note_this_code_for_the_second_user_to_scan_it"
         android:layout_gravity="center"
         android:layout_margin="10dp"
         android:gravity="center"
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:background="@drawable/input"
-        android:hint="Accident Address"
+        android:hint="@string/accident_address"
         android:inputType="text"
         android:backgroundTint="@color/secondry_color"
         android:padding="15dp"
@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:background="@drawable/input"
-        android:hint="Car Plate"
+        android:hint="@string/car_plate"
         android:backgroundTint="@color/secondry_color"
         android:inputType="text"
         android:padding="15dp"
@@ -67,7 +67,7 @@
             android:backgroundTint="@color/secondry_color"
             android:enabled="false"
             android:gravity="center"
-            android:hint="Accident Id Member"
+            android:hint="@string/accident_id_member"
             android:inputType="text"
             android:padding="15dp"
             android:textColor="@color/black"
@@ -105,7 +105,7 @@
             android:gravity="center"
             android:backgroundTint="@color/secondry_color"
 
-            android:hint="Accident Time"
+            android:hint="@string/accident_time"
             android:padding="15dp"
             android:textStyle="bold" />
 
@@ -117,7 +117,7 @@
             android:background="@drawable/input"
 
             android:gravity="center"
-            android:text="time"
+            android:text="@string/time"
             android:textColor="@color/white" />
 
     </LinearLayout>
@@ -130,7 +130,7 @@
         android:layout_margin="15dp"
         android:background="@drawable/input"
         android:padding="15dp"
-        android:text="Add"
+        android:text="@string/add"
         android:textColor="@color/white"
 
         android:textStyle="bold" />

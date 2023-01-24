@@ -13,8 +13,8 @@
         app:cmv_arrowGravity="start"
         app:cmv_arrowPosition="left"
         android:layout_margin="5dp"
-        app:cmv_backgroundColor="@color/forth_color"
-        app:cmv_backgroundColorPressed="@color/forth_color"
+        app:cmv_backgroundColor="@color/teal_700"
+        app:cmv_backgroundColorPressed="@color/teal_700"
         app:cmv_cornerRadius="3dp"
         app:cmv_showArrow="true">
 

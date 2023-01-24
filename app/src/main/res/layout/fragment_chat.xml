@@ -28,8 +28,7 @@
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mListView" />'
-
+        app:layout_constraintTop_toBottomOf="@+id/mListView" />
     <androidx.constraintlayout.widget.ConstraintLayout
 
         android:id="@+id/linearLayout2"
@@ -55,7 +54,7 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Second userId part is :"
+            android:text="@string/second_userid_part_is"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -101,7 +100,7 @@
         android:layout_margin="5dp"
         android:background="@drawable/input"
         android:backgroundTint="@color/secondry_color"
-        android:hint="Type here..."
+        android:hint="@string/type_here"
         android:padding="15dp"
         android:textColorHint="@color/black"
 

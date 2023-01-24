@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="email_edt">الايميل</string>
+    <string name="password_edt">كلمة السر</string>
+    <string name="login_btn">دخول</string>
+    <string name="register_txt">انشاء حساب جديد</string>
+    <string name="fullname_edt">الاسم الكامل</string>
+    <string name="idNum">رقم اللوحة</string>
+    <string name="register_btn">اشترااك</string>
+    <string name="join_accident">"انضمام حادث "</string>
+    <string name="add_accident">اضافة حادث</string>
+    <string name="user_name_edt">اسم المستخدم</string>
+    <string name="upload_title_txt">تحميل صورة</string>
+    <string name="ihaaveaccount">تمتلك حساب بالفعل , اضغط هنا</string>
+    <string name="idonthaaveaccount">لا تمتلك حساب ؟؟ اضغط هنا</string>
+    <string name="user_id">اسم المستخدم</string>
+    <string name="upload">تحميل</string>
+    <string name="cancel">الغاء</string>
+    <string name="result">النتيجة</string>
+    <string name="joined_at">انضم في :</string>
+    <string name="second_userid_part_is">عنوان الطرف الثاني</string>
+    <string name="type_here">"ارسال "</string>
+    <string name="accident_address">عنوان الحادث</string>
+    <string name="car_plate">رقم لوحة المركبة</string>
+    <string name="accident_time">وقت الحاددث</string>
+    <string name="time">الوقت</string>
+    <string name="your_code_n_note_this_code_for_the_second_user_to_scan_it">يرجى الانتباه , هنا الكود الخاص بك ليتم مسحه من قبل الطرف الاخر</string>
+    <string name="accident_id_member">عنوان الطرف الثاني</string>
+    <string name="add">اضافة</string>
+    <string name="enter_password">ادخال كلمة المرور</string>
+    <string name="forgot_password">هل نسيت كلمة المرور</string>
+    <string name="please_enter_password">ادخل كلمة المرور</string>
+    <string name="home">الصفحة الرئيسية</string>
+    <string name="profile">البروفايل</string>
+    <string name="logout">تسجيل خروج</string>
+    <string name="helpertxt">ملاحظة : يرجى اختيار كلمة مرور قوية تحتوي على رموز وأحرف كبيرة</string>
+</resources>
