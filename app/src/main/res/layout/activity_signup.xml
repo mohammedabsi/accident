@@ -28,7 +28,8 @@
             android:layout_marginTop="5dp"
             android:layout_weight="1"
             android:hint="@string/user_name_edt"
-            app:hintTextColor="@color/primary_color"
+            app:hintTextColor="@color/black"
+            app:boxStrokeColor="@color/teal_700"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             >
 
@@ -53,8 +54,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
+        app:boxStrokeColor="@color/teal_700"
         android:hint="@string/email_edt"
-        app:hintTextColor="@color/primary_color"
+        app:hintTextColor="@color/black"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         >
         <EditText
@@ -72,10 +74,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:hint="@string/password_edt"
-        app:hintTextColor="@color/primary_color"
+        app:hintTextColor="@color/black"
         app:passwordToggleEnabled="true"
         app:helperText="@string/helpertxt"
         app:helperTextTextColor="@android:color/holo_red_light"
+        app:boxStrokeColor="@color/teal_700"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         >
         <EditText

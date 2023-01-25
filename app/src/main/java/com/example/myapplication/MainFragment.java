@@ -22,7 +22,7 @@ import android.widget.Toast;
  * create an instance of this fragment.
  */
 public class MainFragment extends Fragment {
-    Button joinAcc, addAcc;
+    Button joinAcc, addAcc , emergency;
     private static final int MY_CAMERA_REQUEST_CODE = 100;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -71,9 +71,11 @@ public class MainFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_main, container, false);
         joinAcc = v.findViewById(R.id.joinAcc);
         addAcc = v.findViewById(R.id.addAcc);
+        emergency = v.findViewById(R.id.emergency);
 
         joinAcc.setOnClickListener(listener);
         addAcc.setOnClickListener(listener);
+        emergency.setOnClickListener(listener);
 
         if (ContextCompat.checkSelfPermission(getContext(), Manifest.permission.CAMERA)
                 == PackageManager.PERMISSION_DENIED){
@@ -102,6 +104,9 @@ public class MainFragment extends Fragment {
                     intent.putExtra("accident", "2");
                     getParentFragmentManager().beginTransaction().replace(R.id.container, new AddAccidentFragment()).addToBackStack(null).commit();
 
+                    break;
+                case R.id.emergency:
+                    getParentFragmentManager().beginTransaction().replace(R.id.container, new InfoFragment()).addToBackStack(null).commit();
                     break;
 
 

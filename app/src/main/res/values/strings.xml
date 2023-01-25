@@ -44,4 +44,8 @@
     <string name="profile">Profile</string>
     <string name="logout">Logout</string>
     <string name="helpertxt">choose Strong passowrd \n Contains Capital and special cases</string>
+    <string name="emergency" >emergency</string>
+    <string name="emergency_info">emergency Info</string>
+    <string name="contact">Contact</string>
+    <string name="location">Location</string>
 </resources>

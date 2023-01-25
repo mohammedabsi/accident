@@ -24,6 +24,7 @@
             app:cmv_arrowMargin="3dp"
             app:cmv_arrowPosition="right"
             android:layout_margin="5dp"
+            android:layout_gravity="end"
 
             app:cmv_backgroundColor="#88BABABA"
             app:cmv_backgroundColorPressed="#FFBABABA"

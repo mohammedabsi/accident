@@ -181,7 +181,7 @@ public class MainActivity extends AppCompatActivity {
 
                         try {
                             //BitMatrix class to encode entered text and set Width &amp; Height
-                            BitMatrix mMatrix = mWriter.encode(myText, BarcodeFormat.QR_CODE, 120, 120);
+                            BitMatrix mMatrix = mWriter.encode(myText, BarcodeFormat.QR_CODE, 350, 350);
 
                             BarcodeEncoder mEncoder = new BarcodeEncoder();
                             Bitmap mBitmap = mEncoder.createBitmap(mMatrix);//creating bitmap of code

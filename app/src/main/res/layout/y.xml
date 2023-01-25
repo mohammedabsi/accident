@@ -10,12 +10,13 @@
         android:id="@+id/chatMessageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cmv_arrowGravity="start"
+        app:cmv_arrowGravity="end"
         app:cmv_arrowPosition="left"
         android:layout_margin="5dp"
         app:cmv_backgroundColor="@color/teal_700"
         app:cmv_backgroundColorPressed="@color/teal_700"
         app:cmv_cornerRadius="3dp"
+        android:layout_gravity="end"
         app:cmv_showArrow="true">
 
         <TextView
@@ -23,6 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hello world"
+
             android:textColor="@color/black"
             android:textSize="15sp" />
     </me.himanshusoni.chatmessageview.ChatMessageView>

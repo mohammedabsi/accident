@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">مسجل الحوادث الذكي</string>
     <string name="email_edt">الايميل</string>
     <string name="password_edt">كلمة السر</string>
     <string name="login_btn">دخول</string>
@@ -18,6 +19,8 @@
     <string name="cancel">الغاء</string>
     <string name="result">النتيجة</string>
     <string name="joined_at">انضم في :</string>
+    <string name="accident_proof">اثبات الحادث</string>
+    <string name="choose_picture">اختر صورة</string>
     <string name="second_userid_part_is">عنوان الطرف الثاني</string>
     <string name="type_here">"ارسال "</string>
     <string name="accident_address">عنوان الحادث</string>
@@ -34,4 +37,8 @@
     <string name="profile">البروفايل</string>
     <string name="logout">تسجيل خروج</string>
     <string name="helpertxt">ملاحظة : يرجى اختيار كلمة مرور قوية تحتوي على رموز وأحرف كبيرة</string>
+    <string name="emergency">الطوارئ</string>
+    <string name="emergency_info">معلومات الطوارئ</string>
+    <string name="contact">تواصل</string>
+    <string name="location">المكان</string>
 </resources>

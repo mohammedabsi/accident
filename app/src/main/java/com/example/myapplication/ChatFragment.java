@@ -622,7 +622,7 @@ public class ChatFragment extends Fragment {
 
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://165.232.90.241/api/")
+                .baseUrl("http://64.227.67.56/api/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -739,7 +739,7 @@ public class ChatFragment extends Fragment {
 
     private void ImageUpload(String email) {
 
-        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://165.232.90.241/api/").addConverterFactory(GsonConverterFactory.create()).build();
+        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://64.227.67.56/api/").addConverterFactory(GsonConverterFactory.create()).build();
 
 
         File file = new File(path);
