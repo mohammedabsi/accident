@@ -701,7 +701,13 @@ public class ChatFragment extends Fragment {
                     Result_Dialog.show();
 
                 } else {
-                    Toast.makeText(getActivity(), "Check your Connection", Toast.LENGTH_SHORT).show();
+                    try {
+                        Toast.makeText(getActivity(), response.body().toString(), Toast.LENGTH_SHORT).show();
+                        Log.d("apifail", "onFailure: " + response.errorBody().string());
+
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
                 }
             }
 
@@ -709,7 +715,7 @@ public class ChatFragment extends Fragment {
             public void onFailure(Call<List<List<ReturnResult>>> call, Throwable t) {
                 Toast.makeText(getActivity(), t.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
                 // Result_Dialog.setMessage(t.getLocalizedMessage());
-                Log.d("fail", "onFailure: " + t.getLocalizedMessage());
+                Log.d("apifail", "onFailure: " + t.getLocalizedMessage());
                 Result_Dialog.show();
             }
         });
