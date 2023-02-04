@@ -41,4 +41,22 @@
     <string name="emergency_info">معلومات الطوارئ</string>
     <string name="contact">تواصل</string>
     <string name="location">المكان</string>
+    <string name="q1">ما نوع الحادث؟ a-تصادم خلفي b-تصادم امامي</string>
+    <string name="q2">مكان الحادث ؟  a-الشارع الرئيسي b-اشارة المرور c- مطبات</string>
+    <string name="q3">هل كلا المركبتين بين نفس الخطين ؟</string>
+    <string name="q4">ماذا كان لون الاشارة عند وقوع الحادث ؟  a-اخضر b-اصفر c- احمر</string>
+    <string name="q5">"اين وقع الحادث ؟ a-عند المطب b-قبل المطب "</string>
+    <string name="res1">الخطأ عللى السائق الثاني بنسبة 100%</string>
+    <string name="res2">الخطأ على كلا السائقين بنسبة 50%</string>
+    <string name="res3">الخطأ على السائق الثاني بنسبة 100%</string>
+    <string name="res4">الخطأ على السائق الثاني بنسبة 100%</string>
+    <string name="res5">هل كان امامك اي مركبات عند وقوع الحادث ؟ a-نعم b-لا</string>
+    <string name="res6">الخطأ على المستخدم الثاني بنسبة 100%</string>
+    <string name="res7">الخطأ على الطرفين بنسبة 50%</string>
+    <string name="res8">الخطأ على الطرفين بنسبة 50%</string>
+    <string name="q6">ما هو سبب الحادث ؟ a-ازدحام b-استعمال مفاجئ للفرامل c-رجوع للوراء  d-اسباب اخرى</string>
+    <string name="res9">الخطأ على المستخدم الثاني بنسبة 100%</string>
+    <string name="res10">الخطأ على الطرفين بنسبة 50%</string>
+    <string name="res11">الخطأ عليك بنسبة 100%</string>
+    <string name="res12">"تواصل مع امن الطرقات والمرور للمساعدة اكثر "</string>
 </resources>

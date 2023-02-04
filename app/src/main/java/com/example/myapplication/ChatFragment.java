@@ -334,7 +334,7 @@ public class ChatFragment extends Fragment {
 
 
         if (count == 1 && (message.trim().equalsIgnoreCase("a") || message.trim().contains("b"))) {
-            mimicOtherMessage("where did the accident happended ? \n a-main street \n b-traffic light \n c- speed bump");
+            mimicOtherMessage(getString(R.string.q2));
 
         }
 
@@ -342,57 +342,57 @@ public class ChatFragment extends Fragment {
 
             if (count == 2 && message.trim().equalsIgnoreCase("a")) {
                 counter = 10;
-                mimicOtherMessage("are both cars between lines when the accident happened ? \n a- yes \n b- no ");
+                mimicOtherMessage(getString(R.string.q3));
 
 
             }
             if (count == 2 && message.trim().equalsIgnoreCase("b")) {
                 counter = 20;
-                mimicOtherMessage("what color was the light when accident happened? \n a- green \n b- yellow \n c- other ");
+                mimicOtherMessage(getString(R.string.q4));
 
 
             }    if (count == 2 && message.trim().equalsIgnoreCase("c")) {
                 counter = 30;
-                mimicOtherMessage("where did the accident happened ? \n a- right on speed bump \n b-before speed bump ");
+                mimicOtherMessage(getString(R.string.q5));
 
 
             }
 
         if (count == 31 && message.trim().equalsIgnoreCase("a")) {
-            mimicOtherMessage("fault on user 2 by 100%");
+            mimicOtherMessage(getString(R.string.res1));
             mButtonSend.setEnabled(false);
             mEditTextMessage.setEnabled(false);
 
         }  if (count == 31 && message.trim().equalsIgnoreCase("b")) {
-            mimicOtherMessage("fault on both users by 50%");
+            mimicOtherMessage(getString(R.string.res2));
             mButtonSend.setEnabled(false);
             mEditTextMessage.setEnabled(false);
 
         }
 
         if (count == 21 && message.trim().equalsIgnoreCase("a")) {
-            mimicOtherMessage("fault on user 2 by 100%");
+            mimicOtherMessage(getString(R.string.res3));
             mButtonSend.setEnabled(false);
             mEditTextMessage.setEnabled(false);
 
         }
         if (count == 21 && message.trim().equalsIgnoreCase("c")) {
-            mimicOtherMessage("fault on user 2 by 100%");
+            mimicOtherMessage(getString(R.string.res4));
             mButtonSend.setEnabled(false);
             mEditTextMessage.setEnabled(false);
 
         }
         if (count == 21 && message.trim().equalsIgnoreCase("b")) {
-            mimicOtherMessage("are there any cars infront of user 1 when accident happened ? \n a- yes \n b- no ");
+            mimicOtherMessage(getString(R.string.res5));
 
 
         }   if (count == 22 && message.trim().equalsIgnoreCase("a")) {
-            mimicOtherMessage("fault on user 2 by 100%");
+            mimicOtherMessage(getString(R.string.res6));
             mButtonSend.setEnabled(false);
             mEditTextMessage.setEnabled(false);
 
         }  if (count == 22 && message.trim().equalsIgnoreCase("b")) {
-            mimicOtherMessage("fault on both users  by 50%");
+            mimicOtherMessage(getString(R.string.res7));
             mButtonSend.setEnabled(false);
             mEditTextMessage.setEnabled(false);
 
@@ -400,7 +400,7 @@ public class ChatFragment extends Fragment {
 
 
             if (count == 11 && message.trim().equalsIgnoreCase("b")) {
-                mimicOtherMessage("fault on both by 50%");
+                mimicOtherMessage(getString(R.string.res8));
                 mButtonSend.setEnabled(false);
             mEditTextMessage.setEnabled(false);
 
@@ -408,30 +408,30 @@ public class ChatFragment extends Fragment {
 
 
             if (count == 11 && message.trim().equalsIgnoreCase("a")) {
-                mimicOtherMessage("what caused the accident ? \n a- traffic \n b- sudden use of breaks \n c- reverse \n d- other ");
+                mimicOtherMessage(getString(R.string.q6));
 
 
             }
             if (count == 12 && message.trim().equalsIgnoreCase("a")) {
-                mimicOtherMessage("the fault on user 2 by 100 % ");
+                mimicOtherMessage(getString(R.string.res9));
                 mButtonSend.setEnabled(false);
                 mEditTextMessage.setEnabled(false);
 
             }
             if (count == 12 && message.trim().equalsIgnoreCase("b")) {
-                mimicOtherMessage("both users get 50% fault");
+                mimicOtherMessage(getString(R.string.res10));
                 mButtonSend.setEnabled(false);
                 mEditTextMessage.setEnabled(false);
 
             }
             if (count == 12 && message.trim().equalsIgnoreCase("c")) {
-                mimicOtherMessage("the fault on user 1 by 100 % ");
+                mimicOtherMessage(getString(R.string.res11));
                 mButtonSend.setEnabled(false);
                 mEditTextMessage.setEnabled(false);
 
             }
             if (count == 12 && message.trim().equalsIgnoreCase("d")) {
-                mimicOtherMessage("Contact this number XXXXXXXX and the officer will come and assist");
+                mimicOtherMessage(getString(R.string.res12));
                 mButtonSend.setEnabled(false);
                 mEditTextMessage.setEnabled(false);
 
@@ -583,7 +583,7 @@ public class ChatFragment extends Fragment {
                     public void run() {
                         //Do something after 100ms
                         progressDialog.dismiss();
-                        mimicOtherMessage("what type of accident did you have ? \n a- back crash \n b- frontal crash ");
+                        mimicOtherMessage(getString(R.string.q1));
 
                         ShowResultDialog();
                     }

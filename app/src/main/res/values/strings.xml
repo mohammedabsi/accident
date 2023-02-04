@@ -48,4 +48,22 @@
     <string name="emergency_info">emergency Info</string>
     <string name="contact">Contact</string>
     <string name="location">Location</string>
+    <string name="q1">\"what type of accident did you have ? \n a- back crash \n b- frontal crash \"</string>
+    <string name="q2">where did the accident happended ? \n a-main street \n b-traffic light \n c- speed bump</string>
+    <string name="q3">\"are both cars between lines when the accident happened ? \n a- yes \n b- no \"</string>
+    <string name="q4">\"what color was the light when accident happened? \n a- green \n b- yellow \n c- other \"</string>
+    <string name="q5">\"where did the accident happened ? \n a- right on speed bump \n b-before speed bump \"</string>
+    <string name="res1">fault on user 2 by 100%</string>
+    <string name="res2">fault on both users by 50%</string>
+    <string name="res3">fault on user 2 by 100%</string>
+    <string name="res4">fault on user 2 by 100%</string>
+    <string name="res5">\"are there any cars infront of user 1 when accident happened ? \n a- yes \n b- no \"</string>
+    <string name="res6">fault on user 2 by 100%</string>
+    <string name="res7">fault on both users  by 50%</string>
+    <string name="res8">fault on both by 50%</string>
+    <string name="q6">\"what caused the accident ? \n a- traffic \n b- sudden use of breaks \n c- reverse \n d- other \"</string>
+    <string name="res9">\"the fault on user 2 by 100 % \"</string>
+    <string name="res10">both users get 50% fault</string>
+    <string name="res11">\"the fault on user 1 by 100 % \"</string>
+    <string name="res12">Contact this number XXXXXXXX and the officer will come and assist</string>
 </resources>
