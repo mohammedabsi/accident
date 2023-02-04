@@ -630,38 +630,24 @@ public class ChatFragment extends Fragment {
 
 
 
-        Call<List<List<ReturnResult>>> call = returnResultApiInterface.getResultList();
+        Call<ReturnResult> call = returnResultApiInterface.getResultList();
 
-        call.enqueue(new Callback<List<List<ReturnResult>>>() {
+        call.enqueue(new Callback<ReturnResult>() {
             @Override
-            public void onResponse(Call<List<List<ReturnResult>>> call, Response<List<List<ReturnResult>>> response) {
-                if (response.isSuccessful()) {
+            public void onResponse(Call<ReturnResult> call, Response<ReturnResult> response) {
+                if (response.isSuccessful()){
 
 
-                    List<ReturnResult> list = response.body().get(0);
-                   LinkedList <String> list1 = new LinkedList<String>();
-
-                    for (ReturnResult d : list) {
-                        if (d.getEmail() != null && d.getEmail().equalsIgnoreCase(currentemail)) {
-                            if (d.getResult() != null) {
-                                list1.add(d.getResult());
-                                list1.remove("");
+                    Log.d("ListTag", "onResponse: "+response.body().getResult());
 
 
-                            }
-                        }
-
-                    }
-
-                  Log.d("TAGOnRespponse", "onResponse: "+ list1 + "\n" + list1.getLast().trim());
+                  LinkedList <String> list1 = new LinkedList<String>();
+                  list1.add(response.body().getResult());
+                    Log.d("ListTag", "onResponse: "+list1.getLast());
 
 
-
-                    if (!list1.getLast().trim().isEmpty()){
-
-
-
-                        if (list1.getLast().toString().equalsIgnoreCase("1")) {
+                    if (!list1.isEmpty()){
+                        if (list1.getLast().equalsIgnoreCase("'1'")) {
                             Result_Dialog.setMessage("There is an accident:( ");
 
 
@@ -680,7 +666,7 @@ public class ChatFragment extends Fragment {
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
 
-                                    if (!list1.getLast().trim().isEmpty() && list1.getLast().equalsIgnoreCase("1")) {
+                                    if (!response.body().getResult().isEmpty() && response.body().getResult().equalsIgnoreCase("'1'")) {
                                         dialog.dismiss();
                                         alertDialog2.show();
 
@@ -696,29 +682,105 @@ public class ChatFragment extends Fragment {
                             });
 
 
-                    Toast.makeText(getActivity(), response.body().get(0).get(3).getEmail() + "\n" + response.body().get(0).get(3), Toast.LENGTH_SHORT).show();
-
                     Result_Dialog.show();
-
-                } else {
-                    try {
-                        Toast.makeText(getActivity(), response.body().toString(), Toast.LENGTH_SHORT).show();
-                        Log.d("apifail", "onFailure: " + response.errorBody().string());
-
-                    } catch (IOException e) {
-                        throw new RuntimeException(e);
-                    }
                 }
             }
 
+
+
             @Override
-            public void onFailure(Call<List<List<ReturnResult>>> call, Throwable t) {
+            public void onFailure(Call<ReturnResult> call, Throwable t) {
                 Toast.makeText(getActivity(), t.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
-                // Result_Dialog.setMessage(t.getLocalizedMessage());
-                Log.d("apifail", "onFailure: " + t.getLocalizedMessage());
-                Result_Dialog.show();
             }
         });
+
+//        call.enqueue(new Callback<List<List<ReturnResult>>>() {
+//            @Override
+//            public void onResponse(Call<List<List<ReturnResult>>> call, Response<List<List<ReturnResult>>> response) {
+//                if (response.isSuccessful()) {
+//
+//
+//                    List<ReturnResult> list = response.body().get(0);
+//                   LinkedList <String> list1 = new LinkedList<String>();
+//
+//                    for (ReturnResult d : list) {
+//                        if (d.getResult() != null && d.getResult().equalsIgnoreCase("1")) {
+//                            if (d.getResult() != null) {
+//                                list1.add(d.getResult());
+//                                list1.remove("");
+//
+//
+//                            }
+//                        }
+//
+//                    }
+//
+//                  Log.d("TAGOnRespponse", "onResponse: "+ list1 + "\n" + list1.getLast().trim());
+//
+//
+//
+//                    if (!list1.getLast().trim().isEmpty()){
+//
+//
+//
+//                        if (list1.getLast().toString().equalsIgnoreCase("1")) {
+//                            Result_Dialog.setMessage("There is an accident:( ");
+//
+//
+//                        } else {
+//                            Result_Dialog.setMessage("There is No accident :)");
+//
+//                        }
+//                    }else {
+//                        Result_Dialog.setMessage("No result return , check the service");
+//                    }
+//
+//
+//
+//
+//                    Result_Dialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+//                            new DialogInterface.OnClickListener() {
+//                                public void onClick(DialogInterface dialog, int which) {
+//
+//                                    if (!list1.getLast().trim().isEmpty() && list1.getLast().equalsIgnoreCase("1")) {
+//                                        dialog.dismiss();
+//                                        alertDialog2.show();
+//
+//                                    } else {
+//                                        dialog.dismiss();
+//                                        getParentFragmentManager().beginTransaction().replace(R.id.container, new MainFragment()).commit();
+//
+//
+//                                    }
+//
+//
+//                                }
+//                            });
+//
+//
+//                   // Toast.makeText(getActivity(), response.body().get(0).get(3).getEmail() + "\n" + response.body().get(0).get(3), Toast.LENGTH_SHORT).show();
+//
+//                    Result_Dialog.show();
+//
+//                } else {
+//                    try {
+//                        Toast.makeText(getActivity(), response.errorBody().string(), Toast.LENGTH_SHORT).show();
+//                      //  Log.d("apifail", "onFailure: " + t.getLocalizedMessage());
+//
+//                    } catch (IOException e) {
+//                        throw new RuntimeException(e);
+//                    }
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(Call<List<List<ReturnResult>>> call, Throwable t) {
+//                Toast.makeText(getActivity(), t.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+//                // Result_Dialog.setMessage(t.getLocalizedMessage());
+//                Log.d("apifail", "onFailure: " + t.getLocalizedMessage());
+//                Result_Dialog.show();
+//            }
+//        });
 
 
     }

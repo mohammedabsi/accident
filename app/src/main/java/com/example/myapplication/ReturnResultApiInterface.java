@@ -8,5 +8,5 @@ import retrofit2.http.POST;
 
 public interface ReturnResultApiInterface {
     @POST("get_photo")
-    Call<List<List<ReturnResult>>> getResultList();
+    Call<ReturnResult> getResultList();
 }
