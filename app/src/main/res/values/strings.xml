@@ -73,4 +73,9 @@
     <string name="thereisacc">\"There is an accident:( \"</string>
     <string name="noaccedent">There is No accident :)</string>
     <string name="noresult">No result return , check the service</string>
+    <string name="accresults">Accident Result</string>
+    <string name="ddd">\"Didn\'t recognize your input , try to write as requested !! \"</string>
+    <string name="alert">Alert</string>
+    <string name="alert2">\"You Should Scan Qr code First \"</string>
+    <string name="upoadimgprog">Image Upload.... , Please wait for your result</string>
 </resources>

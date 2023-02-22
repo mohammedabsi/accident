@@ -204,7 +204,7 @@ public class ChatFragment extends Fragment {
         openCam_img = dialog.findViewById(R.id.openCam_img);
 
          alertDialog2 = new AlertDialog.Builder(getActivity()).create();
-        alertDialog2.setTitle("Alert !!!");
+        alertDialog2.setTitle(R.string.alert);
         alertDialog2.setMessage("I certify and pledge that the statment is all true !!");
         alertDialog2.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
                 new DialogInterface.OnClickListener() {
@@ -238,7 +238,7 @@ public class ChatFragment extends Fragment {
         });
 
         progressDialog = new ProgressDialog(getActivity());
-        progressDialog.setMessage("Image Upload.... , Please wait for your result");
+        progressDialog.setMessage(getString(R.string.upoadimgprog));
 
         chatMessageArrayList = new ArrayList<ChatMessage>();
 
@@ -288,13 +288,13 @@ public class ChatFragment extends Fragment {
 
 
                 } else {
-                    mimicOtherMessage("Didn't recognize your input , try to write as requested !! ");
+                    mimicOtherMessage(getString(R.string.ddd));
 
                 }
                 sendMessage(message, counter);
                 } else {
-                    alertDialog.setTitle("Alert");
-                    alertDialog.setMessage("You Should Scan Qr code First ");
+                    alertDialog.setTitle(getString(R.string.alert));
+                    alertDialog.setMessage(getString(R.string.alert2));
                     alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
@@ -617,7 +617,7 @@ public class ChatFragment extends Fragment {
     private void ShowResultDialog() {
 
         AlertDialog Result_Dialog = new AlertDialog.Builder(getActivity()).create();
-        Result_Dialog.setTitle("Accident Result");
+        Result_Dialog.setTitle(getString(R.string.accresults));
         final List<ReturnResult>[] arrayList = new List[]{new ArrayList<ReturnResult>()};
 
 
