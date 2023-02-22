@@ -148,7 +148,7 @@ public class AddAccidentFragment extends Fragment {
 
         AlertDialog alertDialog = new AlertDialog.Builder(getActivity()).create();
         alertDialog.setTitle("Alert !!!");
-        alertDialog.setMessage("I certify and pledge that the statment is all true !!");
+        alertDialog.setMessage(getString(R.string.certify));
         alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {

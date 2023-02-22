@@ -66,4 +66,6 @@
     <string name="res10">both users get 50% fault</string>
     <string name="res11">\"the fault on user 1 by 100 % \"</string>
     <string name="res12">Contact this number XXXXXXXX and the officer will come and assist</string>
+    <string name="certify">I certify and pledge that the statment is all true !!</string>
+    <string name="passres">\"Enter Your Email To Receive Reset Link at your email \"</string>
 </resources>

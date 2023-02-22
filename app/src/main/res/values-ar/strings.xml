@@ -59,4 +59,6 @@
     <string name="res10">الخطأ على الطرفين بنسبة 50%</string>
     <string name="res11">الخطأ عليك بنسبة 100%</string>
     <string name="res12">"تواصل مع امن الطرقات والمرور للمساعدة اكثر "</string>
+    <string name="certify">اتعهد في هذا المكان ان كل المعلومات المدخلة صحيحة وليست كاذبة</string>
+    <string name="passres">ادخل الايميل لاعادة تعيين كلمة المرور</string>
 </resources>

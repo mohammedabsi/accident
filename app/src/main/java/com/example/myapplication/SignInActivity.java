@@ -57,7 +57,7 @@ public class SignInActivity extends AppCompatActivity {
                 EditText resetPass = new EditText(view.getContext());
                 AlertDialog.Builder passwordResetDialog = new AlertDialog.Builder(view.getContext());
                 passwordResetDialog.setTitle("Reset Password ?");
-                passwordResetDialog.setMessage("Enter Your Email To Receive Reset Link at your email ");
+                passwordResetDialog.setMessage(R.string.passres);
                 passwordResetDialog.setView(resetPass);
 
                 passwordResetDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
