@@ -295,10 +295,13 @@ public class ChatFragment extends Fragment {
                 } else {
                     alertDialog.setTitle(getString(R.string.alert));
                     alertDialog.setMessage(getString(R.string.alert2));
+
+
                     alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     dialog.dismiss();
+
 
                                 }
                             });
