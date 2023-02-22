@@ -204,9 +204,9 @@ public class ChatFragment extends Fragment {
         openCam_img = dialog.findViewById(R.id.openCam_img);
 
          alertDialog2 = new AlertDialog.Builder(getActivity()).create();
-        alertDialog2.setTitle(R.string.alert);
-        alertDialog2.setMessage(getResources().getString(R.string.certify));
-        alertDialog2.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+        alertDialog2.setTitle("تنبيه ");
+        alertDialog2.setMessage("أتعهد ان البيانات المدخلة صحيحة ");
+        alertDialog2.setButton(AlertDialog.BUTTON_NEUTRAL, "موافق",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
@@ -293,8 +293,8 @@ public class ChatFragment extends Fragment {
                 }
                 sendMessage(message, counter);
                 } else {
-                    alertDialog.setTitle(getString(R.string.alert));
-                    alertDialog.setMessage(getString(R.string.alert2));
+                    alertDialog.setTitle("تنبيه");
+                    alertDialog.setMessage("يرجى مسح الكود اولا ");
 
 
                     alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
@@ -620,7 +620,7 @@ public class ChatFragment extends Fragment {
     private void ShowResultDialog() {
 
         AlertDialog Result_Dialog = new AlertDialog.Builder(getActivity()).create();
-        Result_Dialog.setTitle(getString(R.string.accresults));
+        Result_Dialog.setTitle("النتيجة");
         final List<ReturnResult>[] arrayList = new List[]{new ArrayList<ReturnResult>()};
 
 
@@ -665,7 +665,7 @@ public class ChatFragment extends Fragment {
 
 
 
-                    Result_Dialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                    Result_Dialog.setButton(AlertDialog.BUTTON_NEUTRAL, "موافق",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
 

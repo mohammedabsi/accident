@@ -66,4 +66,8 @@
     <string name="thereisacc">نأسف ,يوجد حادث</string>
     <string name="noaccedent">لا يوجد حادث</string>
     <string name="noresult">لا توجد نتيجة ,يرجى المحاولة لاحقا</string>
+    <string name="ddd">لم يتعرف على الاجابة يرجى ادخال الاجابة المسموحة</string>
+    <string name="alert">تنبيه</string>
+    <string name="alert2">يجب مسج الكود اولا</string>
+    <string name="upoadimgprog">جاري رفع الصورة , يرجى الانتظار</string>
 </resources>
