@@ -205,7 +205,7 @@ public class ChatFragment extends Fragment {
 
          alertDialog2 = new AlertDialog.Builder(getActivity()).create();
         alertDialog2.setTitle(R.string.alert);
-        alertDialog2.setMessage("I certify and pledge that the statment is all true !!");
+        alertDialog2.setMessage(getResources().getString(R.string.certify));
         alertDialog2.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
