@@ -61,4 +61,9 @@
     <string name="res12">"تواصل مع امن الطرقات والمرور للمساعدة اكثر "</string>
     <string name="certify">اتعهد في هذا المكان ان كل المعلومات المدخلة صحيحة وليست كاذبة</string>
     <string name="passres">ادخل الايميل لاعادة تعيين كلمة المرور</string>
+    <string name="errormsg">حدث خطأ الرجاء المحاولة مرة أخرى</string>
+    <string name="startbotchat">لا تستطيع بدأ محادثة , يرجى رفع اثبات صورة اولا</string>
+    <string name="thereisacc">نأسف ,يوجد حادث</string>
+    <string name="noaccedent">لا يوجد حادث</string>
+    <string name="noresult">لا توجد نتيجة ,يرجى المحاولة لاحقا</string>
 </resources>

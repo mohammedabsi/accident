@@ -68,4 +68,9 @@
     <string name="res12">Contact this number XXXXXXXX and the officer will come and assist</string>
     <string name="certify">I certify and pledge that the statment is all true !!</string>
     <string name="passres">\"Enter Your Email To Receive Reset Link at your email \"</string>
+    <string name="errormsg">Something went wrong , try again later ...</string>
+    <string name="startbotchat">You cant start chatbot before uploading image</string>
+    <string name="thereisacc">\"There is an accident:( \"</string>
+    <string name="noaccedent">There is No accident :)</string>
+    <string name="noresult">No result return , check the service</string>
 </resources>

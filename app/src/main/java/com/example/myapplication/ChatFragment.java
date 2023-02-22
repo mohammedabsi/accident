@@ -509,7 +509,7 @@ public class ChatFragment extends Fragment {
 
 
                                     } else {
-                                        Toast.makeText(getActivity(), "Something went wrong , try again later ...", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(getActivity(), R.string.errormsg, Toast.LENGTH_SHORT).show();
                                     }
                                 }
                             });
@@ -558,7 +558,7 @@ public class ChatFragment extends Fragment {
                     dialog.dismiss();
 
                     getParentFragmentManager().beginTransaction().replace(R.id.container, new MainFragment()).commit();
-                    Toast.makeText(getActivity(), "You cant start chatbot before uploading image", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), R.string.startbotchat, Toast.LENGTH_SHORT).show();
 
                 } else {
                     dialog.dismiss();
@@ -648,15 +648,15 @@ public class ChatFragment extends Fragment {
 
                     if (!list1.isEmpty()){
                         if (list1.getLast().equalsIgnoreCase("'1'")) {
-                            Result_Dialog.setMessage("There is an accident:( ");
+                            Result_Dialog.setMessage(getString(R.string.thereisacc));
 
 
                         } else {
-                            Result_Dialog.setMessage("There is No accident :)");
+                            Result_Dialog.setMessage(getString(R.string.noaccedent));
 
                         }
                     }else {
-                        Result_Dialog.setMessage("No result return , check the service");
+                        Result_Dialog.setMessage(getString(R.string.noresult));
                     }
 
 
@@ -694,93 +694,7 @@ public class ChatFragment extends Fragment {
             }
         });
 
-//        call.enqueue(new Callback<List<List<ReturnResult>>>() {
-//            @Override
-//            public void onResponse(Call<List<List<ReturnResult>>> call, Response<List<List<ReturnResult>>> response) {
-//                if (response.isSuccessful()) {
-//
-//
-//                    List<ReturnResult> list = response.body().get(0);
-//                   LinkedList <String> list1 = new LinkedList<String>();
-//
-//                    for (ReturnResult d : list) {
-//                        if (d.getResult() != null && d.getResult().equalsIgnoreCase("1")) {
-//                            if (d.getResult() != null) {
-//                                list1.add(d.getResult());
-//                                list1.remove("");
-//
-//
-//                            }
-//                        }
-//
-//                    }
-//
-//                  Log.d("TAGOnRespponse", "onResponse: "+ list1 + "\n" + list1.getLast().trim());
-//
-//
-//
-//                    if (!list1.getLast().trim().isEmpty()){
-//
-//
-//
-//                        if (list1.getLast().toString().equalsIgnoreCase("1")) {
-//                            Result_Dialog.setMessage("There is an accident:( ");
-//
-//
-//                        } else {
-//                            Result_Dialog.setMessage("There is No accident :)");
-//
-//                        }
-//                    }else {
-//                        Result_Dialog.setMessage("No result return , check the service");
-//                    }
-//
-//
-//
-//
-//                    Result_Dialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
-//                            new DialogInterface.OnClickListener() {
-//                                public void onClick(DialogInterface dialog, int which) {
-//
-//                                    if (!list1.getLast().trim().isEmpty() && list1.getLast().equalsIgnoreCase("1")) {
-//                                        dialog.dismiss();
-//                                        alertDialog2.show();
-//
-//                                    } else {
-//                                        dialog.dismiss();
-//                                        getParentFragmentManager().beginTransaction().replace(R.id.container, new MainFragment()).commit();
-//
-//
-//                                    }
-//
-//
-//                                }
-//                            });
-//
-//
-//                   // Toast.makeText(getActivity(), response.body().get(0).get(3).getEmail() + "\n" + response.body().get(0).get(3), Toast.LENGTH_SHORT).show();
-//
-//                    Result_Dialog.show();
-//
-//                } else {
-//                    try {
-//                        Toast.makeText(getActivity(), response.errorBody().string(), Toast.LENGTH_SHORT).show();
-//                      //  Log.d("apifail", "onFailure: " + t.getLocalizedMessage());
-//
-//                    } catch (IOException e) {
-//                        throw new RuntimeException(e);
-//                    }
-//                }
-//            }
-//
-//            @Override
-//            public void onFailure(Call<List<List<ReturnResult>>> call, Throwable t) {
-//                Toast.makeText(getActivity(), t.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
-//                // Result_Dialog.setMessage(t.getLocalizedMessage());
-//                Log.d("apifail", "onFailure: " + t.getLocalizedMessage());
-//                Result_Dialog.show();
-//            }
-//        });
+
 
 
     }
